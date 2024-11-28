@@ -1,0 +1,52 @@
+html
+{
+  overflow-y: scroll;
+}
+
+:root {
+  --bgcolor:#222322;
+  --fontcolor:#e2d6c6;
+  --hovercolor:#e8634b;
+  font-family: "Anonymous Pro";
+}
+
+@media (hover:hover) {
+  .link:hover {
+    color:var(--hovercolor);
+    transition-duration: 0.25s;
+  }
+}
+
+.geologica-header-1 {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0,
+    "SHRP" 0;
+}
+
+.anonymous-pro-regular {
+  font-family: "Anonymous Pro", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Geologica";
+}
+
+body {
+  max-width: 800px;
+  margin:40px auto;
+  padding:0 10px;
+  line-height: 24px;
+  color:var(--fontcolor);
+  background:var(--bgcolor);
+}
+
+.ascii-art {
+  white-space: pre;
+}
