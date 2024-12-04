@@ -7,13 +7,40 @@ html
   --bgcolor:#222322;
   --fontcolor:#e2d6c6;
   --hovercolor:#e8634b;
+  --linkcolor: #219c9f;
   font-family: "Anonymous Pro";
+
+  .link {
+    color: var(--linkcolor);
+    text-decoration: none;
+  }
+
+  .lang-switch {
+    background: var(--linkcolor);
+    border: none;
+    border-radius: 5%;
+    font: inherit;
+    color: var(--bgcolor);
+    cursor: pointer;
+    outline: inherit;
+  }
+}
+
+body:lang(ru) *:not(:lang(ru)),
+body:lang(en) *:not(:lang(en)) {
+  display: none;
 }
 
 @media (hover:hover) {
   .link:hover {
     color:var(--hovercolor);
     transition-duration: 0.25s;
+  }
+
+  .ascii-art:hover {
+    color:var(--hovercolor);
+    opacity: 1;
+    transition-duration: 1s;
   }
 }
 
@@ -47,6 +74,35 @@ body {
   background:var(--bgcolor);
 }
 
+select {
+  border:0;
+}
+
 .ascii-art {
-  white-space: pre;
+  white-space: nowrap;
+  font-size: 48px;
+  opacity: 0.25;
+}
+
+.navLeft {
+  display: inline-block;
+}
+
+.navRight {
+  float: right;
+}
+
+.asciiArtContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.emptyFieldContainer {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }

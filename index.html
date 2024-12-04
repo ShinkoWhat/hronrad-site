@@ -11,25 +11,49 @@
   <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Geologica:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body lang = "ru">
   <header>
-    <h1>Hronrad's portfolio</h1>
-    <nav>
-      <a class="link" href="/posts/">posts</a>
-      <a class="link" href="/docs/">docs</a>
-      <a class="link" href="/images">images</a>
-    </nav>
+    <h1>
+      <span lang="en">Portfolio: Platonov Valeriy</span>
+      <span lang="ru">Портфолио: Платонов Валерий</span>
+    </h1>
+    <div class="navHorizontalContainer">
+      <div class="navLeft">
+        <nav class="navHorizontalBox">
+          <a class="link" href="/posts/">
+            <span lang="en">posts\</span>
+            <span lang="ru">посты\</span>
+          </a>
+          <a class="link" href="/docs/platonovvaleriy_resume.pdf">
+            <span lang="en">resume\</span>
+            <span lang="ru">резюме\</span>
+          </a>
+          <a class="link" href="/images">
+            <span lang="en">images\</span>
+            <span lang="ru">изображения\</span>
+          </a>
+        </nav>
+      </div>
+      <div class="navRight">
+        <button id="lang-switch" class="lang-switch">
+          <span lang="en">English</span>
+          <span lang="ru">Русский</span>
+        </button>
+      </div>  
+    </div>
   </header>
   <main>
-    <div class="ascii-art">
-      ███╗   ██╗ ██████╗ ████████╗██╗  ██╗██╗███╗   ██╗ ██████╗ 
-      ████╗  ██║██╔═══██╗╚══██╔══╝██║  ██║██║████╗  ██║██╔════╝ 
-      ██╔██╗ ██║██║   ██║   ██║   ███████║██║██╔██╗ ██║██║  ███╗
-      ██║╚██╗██║██║   ██║   ██║   ██╔══██║██║██║╚██╗██║██║   ██║
-      ██║ ╚████║╚██████╔╝   ██║   ██║  ██║██║██║ ╚████║╚██████╔╝
-      ╚═╝  ╚═══╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+    <div class="emptyFieldContainer">
+      <div class="asciiArtContainer">
+        <div class="ascii-art">
+        ( ´ ▽ ` )/
+        </div>
+      </div>
+      <span lang="en">Nothing here yet!</span>
+      <span lang="ru">Здесь пока ничего!</span>
     </div>
   </main>
   <footer></footer>
+  <script src="main.js"></script>
 </body>
 </html>
